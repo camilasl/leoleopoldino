@@ -1,0 +1,53 @@
+.interalProject {
+    position: absolute;
+    top: 8%;
+    padding: 40px 0 0;
+    width: 100%;
+}
+
+.interalProject h1 {
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    color: $color_brown;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.interalProject .galleryWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    margin: 40px 0 10px;
+}
+
+.interalProject .galleryWrap a img {
+    width: 100%;
+    cursor: zoom-in;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .interalProject .galleryWrap {
+        grid-auto-rows: 35vh;
+    }
+
+    .interalProject .galleryWrap a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .interalProject .galleryWrap {
+        padding: 0 10%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .interalProject .galleryWrap {
+        grid-auto-rows: 50vh;
+    }
+}

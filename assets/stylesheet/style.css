@@ -160,7 +160,7 @@ header .nav-content .logo a img {
 @media only screen and (min-width: 1200px) {
   .projects .project-wrap {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: calc(100vh - 80px);
+    height: 130vh;
   }
 }
 .interalProject {
@@ -213,6 +213,91 @@ header .nav-content .logo a img {
     grid-auto-rows: 50vh;
   }
 }
+.header-login {
+  background-color: #3d3832;
+  width: 100%;
+  max-height: 80px;
+  padding: 10px 30px;
+  margin-bottom: 50px;
+}
+
+.header-login a {
+  width: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60px;
+  display: block;
+}
+
+.header-login a img {
+  width: 100%;
+}
+
+.login {
+  width: 100%;
+}
+
+.login .login-block {
+  background-color: #fcf7f2;
+  width: 80%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.login .login-block a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30vw;
+}
+
+.login .login-block a img {
+  width: 100%;
+}
+
+.login .login-block form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  font-family: "Rubik", system-ui;
+  font-weight: 100;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.login .login-block form label {
+  margin-bottom: 10px;
+}
+
+.login .login-block form input[type=email],
+.login .login-block form input[type=password] {
+  border: none;
+  border-bottom: 1px solid #3d3832;
+  background: none;
+  margin-bottom: 25px;
+}
+
+.login .login-block form input[type=submit] {
+  font-family: "Rubik", system-ui;
+  background: #3d3832;
+  color: #c4b399;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.login .login-block form input[type=submit]:hover {
+  background: #c4b399;
+  color: #3d3832;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

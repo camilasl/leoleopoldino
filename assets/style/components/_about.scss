@@ -1,0 +1,111 @@
+@use './colors' as *;
+
+.menu-voltar {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.menu-voltar a {
+    text-decoration: none;
+    color: $cor-bege;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $cor-clara;
+    }
+}
+
+.about-page {
+    min-height: 85vh;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    /* Borda gradiente */
+    background: linear-gradient(196deg, $cor-bege-escuro, $cor-escura-secundaria);
+    /* Espaço para a borda gradiente */
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 320px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 10px solid $cor-bege;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    background: $cor-escura;
+}
+
+.about-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-content span {
+    font-weight: bold;
+    color: $cor-clara;
+}
+
+.about-content h1 {
+    font-size: 3em;
+    letter-spacing: 0;
+    color: $cor-bege;
+}
+
+.about-content h1 span {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.about-content span {
+    font-weight: bold;
+    color: $cor-bege;
+}
+
+.about-content p {
+    color: $cor-clara;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        margin: 0 auto;
+    }
+
+    .about-content h1 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-container {
+        padding: 0 30px;
+    }
+}

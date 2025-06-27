@@ -1,0 +1,14 @@
+@use './components/colors' as *;
+@use './components/home' as *;
+@use './components/about' as *;
+@use './components/social-media' as *;
+@use './components/marcas' as *;
+@use './components/posters' as *;
+@use './components/single-socialMedia' as *;
+@use './components/single-marcas' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

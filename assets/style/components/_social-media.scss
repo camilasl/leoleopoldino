@@ -1,0 +1,89 @@
+@use './colors' as *;
+
+.social-media {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feed-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 32px 0;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.feed-container a {
+    text-decoration: none;
+}
+
+.feed-item img {
+    //width: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.feed-item {
+    background: $cor-escura;
+    border: 1px solid $cor-bege;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.feed-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px 8px 16px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid $cor-bege;
+    background: $cor-clara;
+    overflow: hidden;
+    display: block;
+}
+
+.username {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: $cor-clara;
+    font-weight: 200;
+}
+
+.post-image {
+    border-radius: 0;
+    border-top: 1px solid $cor-bege;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+} 
+
+@media only screen and (max-width: 1150px) {
+    .feed-container {
+        padding: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .feed-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .feed-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
